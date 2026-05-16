@@ -322,11 +322,19 @@ img {
 
 .footer-center {
   font-size: small;
-}
+  text-align: center;
+  line-height: 1.7;
+} 
 
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+}
 .footer-right {
   display: flex;
   gap: 15px;
+  justify-content: flex-end;
 }
 
 .footer-right i {
@@ -334,7 +342,10 @@ img {
   font-size: 18px;
 }
 
-/* RESPONSIVE */
+.footer-center p:last-child{
+  opacity: 0.8;
+  font-size: 13px;
+}
 
 @media (max-width: 768px) {
 
