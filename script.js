@@ -172,7 +172,7 @@ function showSuggestions(movies) {
 }
 
 document.addEventListener("click", (e) => {
-  if (!e.target.className.closest(".search")) {
+  if (!e.target.closest(".search")) {
     suggestionBox.style.display = "none";
   }
 });
