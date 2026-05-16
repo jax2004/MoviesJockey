@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieJockey</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="moviesJockey.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="title">
+        <img src="moviesJockey.png" alt="" />
+        <h1>Movies Jockey</h1>
+      </div>
+
+      <div class="search">
+        <input type="text" id="movieName" placeholder="Enter movie..." />
+        <button type="submit" id="btn-to-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <div class="suggestions" id="suggestions"></div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="trending">
+        <h2>Trending Movies</h2>
+        <hr />
+        <button onclick="scrollLeftFunc()" class="slidebar">←</button>
+
+        <div class="trending-container" id="slider"></div>
+        <button class="slidebar" onclick="scrollRightFunc()">→</button>
+      </div>
+      <div class="results">
+        <div class="your-search">
+          <h2>Your Searches</h2>
+          <hr />
+        </div>
+        <div class="details">
+          <div class="image-div">
+            <img
+              src="interstellar_2014_advance_original_film_art_682852f2-23f6-46de-a1db-4029d5b6f0b4_5000x.jpg"
+              alt=""
+            />
+          </div>
+          <div class="info">
+            <h2>Interstellar</h2>
+            <p class="rating">⭐ 8.6 IMDB</p>
+            <p class="plot">
+              A team of explorers travel through a wormhole in space...
+            </p>
+            <div class="extra">
+              <div class="sub-info">
+                <p>Release Year</p>
+                <span>2014</span>
+              </div>
+              <div class="sub-info">
+                <p>Genre</p>
+                <span>Sci-Fi</span>
+              </div>
+              <div class="sub-info">
+                <p>Duration</p>
+                <span>2h 49m</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-left">
+        <h3>
+          <img src="moviesJockey.png" alt="" class="footer-img" />
+          Movies Jockey
+        </h3>
+        <p class="footer-left-p">
+          Discover movies, explore details & enjoy cinema 🍿
+        </p>
+      </div>
+      <div class="footer-center">
+        <p>© 2026 MovieJockey. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
