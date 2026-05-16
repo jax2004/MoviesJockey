@@ -4,7 +4,7 @@ MovieJockey is a responsive movie discovery web application built using Vanilla 
 
 ## 🔗 Live Demo
 
-(Add your deployed link here)
+https://movies-jockey.vercel.app/
 
 ---
 
